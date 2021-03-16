@@ -18,12 +18,19 @@ vector: nombres = [‘Lucas’,’Franco’,’Luciano’,’Malena’,’Jonata
 Recorra el vector e imprima los elementos utilizando el ciclo for e indicando 
 en qué índice (posición del vector) se encuentra cada elemento.
 """
-def ejercicio_2_for_en_vector ():
+#Alternativa 1 de hacerlo
+def ejercicio_2_for_en_vector_1 ():
     nombres = ['Lucas','Franco','Luciano','Malena','Jonatan','Luciano',
                'Rodrigo','Maria Sol','Enzo','Milena']
     nom = len(nombres)
     for i in range (0,nom):
         print(f'#{i} {nombres[i]}')
+#Alternativa 2 de hacerlo
+def ejercicio_2_for_en_vector_2 ():
+    nombres = ['Lucas', 'Franco', 'Luciano', 'Malena', 'Jonatan', 'Luciano',
+               'Rodrigo', 'Maria Sol', 'Enzo', 'Milena']
+    for index, l in enumerate(nombres):
+        print(index, l)
 
 """
 Nombre de la función: ejercicio_3_for_en_vector En esta función agregar el 
@@ -61,4 +68,6 @@ def ejercicio_4_while ():
             cant_nota += 1
     prom = nota_acum / cant_nota
     return prom
-print(f'El promedio de las notas ingresadas es {ejercicio_4_while()}')
+    print(f'El promedio de las notas ingresadas es {ejercicio_4_while()}')
+
+ejercicio_2_for_en_vector_2()
