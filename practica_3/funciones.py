@@ -68,4 +68,3 @@ def promedio_ventas(ventas):
 def promedio_ventas_2(ventas):
     prom_ventas = suma_total(ventas) / len(ventas)
     return prom_ventas
-
