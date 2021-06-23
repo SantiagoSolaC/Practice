@@ -1,0 +1,18 @@
+Realice un programa con dos archivos .py, uno que contenga los métodos y otro
+que contenga al menú principal
+
+En el menú se debe crear una lista para ingresar las notas del final de los
+alumnos de AED I
+
+Las opciones deben permitir realizar las tareas listadas a continuación:
+
+- Cargar una nota: esta opción debe agregar un nuevo registro.
+- Mostrar el listado de las notas.
+- Mostrar el listado de los alumnos promocionados: esta opción debe llamar a
+un método sin retorno y que reciba como parámetro el diccionario.
+- Esta opción debe llamar a un método que reciba como parámetro el diccionario
+y muestre el porcentaje de reprobados (nota menor a 4), regulares (nota igual
+o mayor a cuatro y menor que 7) y promocionados (nota mayor a 7).
+- Método sin parámetro y sin retorno que solicite cargar los 3 alumnos con el
+mejor promedio.
+Para salir del sistema se debe agregar la opción “0”.
