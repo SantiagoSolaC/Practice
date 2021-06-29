@@ -1,6 +1,5 @@
 from workspace.practica_4 import funciones
 
-
 def menu():
     print('''---------------------------------------------------------------
                     BIENVENIDO
