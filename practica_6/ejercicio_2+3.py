@@ -21,7 +21,7 @@ class Cuenta:
         bucle = True
         while bucle:
             ing = input(f"Ingrese el monto para sumar a la cuenta de {self.titular}: ")
-            if isfloat(ing) == True:
+            if isfloat(ing):
                 ing = float(ing)
                 if ing > 0.00:
                     self.cantidad = self.cantidad + ing
@@ -36,7 +36,7 @@ class Cuenta:
         bucle = True
         while bucle:
             ing = input(f"Ingrese el monto para restar a la cuenta de {self.titular}: ")
-            if isfloat(ing) == True:
+            if isfloat(ing):
                 ing = float(ing)
                 if ing > 0.00:
                     self.cantidad = self.cantidad - ing
@@ -51,8 +51,7 @@ class Cuenta:
 class Cuenta_joven(Cuenta):
     # Constructor
     def __init__(self, titular="", cantidad=0.00, bonificacion=0, edad=0):
-        self.titular = titular
-        self.cantidad = cantidad
+        super().__init__(titular, cantidad)
         self.bonificacion = bonificacion
         self.edad = edad
 
@@ -64,11 +63,11 @@ class Cuenta_joven(Cuenta):
             return False
 
     def retirar(self):
-        if new_young_account.estitularvalido() == True:
+        if new_young_account.estitularvalido():
             bucle = True
             while bucle:
                 ing = input(f"Ingrese el monto que se va a retirar de la cuenta de {self.titular}: ")
-                if isfloat(ing) == True:
+                if isfloat(ing):
                     ing = float(ing)
                     if ing > 0.00:
                         self.cantidad = self.cantidad - ing
@@ -90,7 +89,7 @@ monto = 0
 bucle = True
 while bucle:
     monto_1 = input("Ingrese el monto: ")
-    if isfloat(monto_1) == True:
+    if isfloat(monto_1):
         monto = float(monto_1)
         break
     else:
@@ -115,7 +114,7 @@ monto_joven = 0
 bucle = True
 while bucle:
     monto_1 = input("Ingrese el monto de la cuenta joven: ")
-    if isfloat(monto_1) == True:
+    if isfloat(monto_1):
         monto_joven = float(monto_1)
         break
     else:
