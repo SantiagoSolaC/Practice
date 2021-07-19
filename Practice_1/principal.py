@@ -1,4 +1,4 @@
-from workspace.practica_1 import funciones
+import funciones
 
 
 def menu():

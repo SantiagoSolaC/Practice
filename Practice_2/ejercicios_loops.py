@@ -80,9 +80,4 @@ def ejercicio_4_while():
             nota_acum = nota_acum + nota
             cant_nota += 1
     prom = nota_acum / cant_nota
-    return prom
-
-
-print(f'El promedio de las notas ingresadas es {ejercicio_4_while()}')
-
-ejercicio_2_for_en_vector_2()
+    print(f'El promedio de las notas ingresadas es {prom}')
