@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title> {{ nombre }} </title>
+</head>
+<body>
+    <h3> El usuario es:</h3>
+    <h4> {{ nombre }}</h4>
+    {% if edad > 18 %}
+        <p>{{ edad }}</p>
+    {% endif %}
+
+    {% for i in lista %}
+        <p> {{ i }} </p>
+    {% endfor %}
+
+</body>
+
+
+</html>

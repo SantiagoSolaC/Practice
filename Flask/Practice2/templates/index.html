@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %} {{title}} {% endblock %}
+
+{% block content %}
+<form method="POST">
+    <div class="form-group col-xs-12 floating-label-form-group controls">
+        {%from "_macro.html" import render_field %}   
+        {{ render_field(form.name) }}
+        {{ render_field(form.email) }}
+        {{ render_field(form.telephone) }}
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+</form>
+{% endblock %}
