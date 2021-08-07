@@ -1,6 +1,4 @@
-from flask import Flask
-from flask import render_template
-from flask import request
+from flask import Flask, render_template, request
 import forms
 
 app = Flask(__name__)
@@ -15,6 +13,10 @@ def index():
     
     title = 'Formulario'
     return render_template('index.html', title = title, form = comment_form)
+
+@app.route('/login', methods = ['GET'])
+def login():
+    return render_template('login.html')
 
 
 if __name__ == '__main__':
