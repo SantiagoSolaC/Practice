@@ -1,0 +1,23 @@
+
+{% extends 'base.html' %}
+{% block title %}
+{% endblock %}
+{% block body %}
+
+<div class="container">
+    <form class="row g-2">
+        <div class="col-md-2">
+            <label for="name" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" name="name" readonly value="{{ user.name }}">
+        </div>
+        <div class="col-md-2">
+            <label for="last_name" class="form-label">Cantidad:</label>
+            <input type="text" class="form-control" name="last_name" readonly value="{{ user.last_name }}">
+        </div>
+        <div class="col-md-2">
+            <label for="email" class="form-label">Descripcion:</label>
+            <input type="text" class="form-control" name="email" readonly value="{{ user.email }}">
+        </div>
+    </form>
+</div>
+{% endblock %}
